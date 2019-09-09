@@ -15,14 +15,18 @@ def selection_sort(arr):
 
 # TO-DO: implement the Bubble Sort function below
 def bubble_sort(arr):
-    for i in range(0, len(arr)):
-        has_swap = False
+    is_unsorted = True
 
-        for j in range(0, len(arr)):
-            print(j)
+    while is_unsorted:
+        did_swap = False
 
-        if has_swap == False:
-            break
+        for i in range(0, len(arr) - 1):
+            print(arr[i], arr[i + 1], arr[i] < arr[i+1])
+            # if arr[i] < arr[i+1]:
+            #     did_swap = True
+
+        if did_swap = False:
+            is_unsorted = False
     return arr
 
 arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
