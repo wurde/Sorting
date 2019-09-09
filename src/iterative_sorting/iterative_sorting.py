@@ -30,6 +30,27 @@ def bubble_sort(arr):
             is_unsorted = False
     return arr
 
-# STRETCH: implement the Count Sort function below
 def count_sort(arr, maximum =- 1):
+    for i in range(0, len(arr)):
+        if arr[i] < 0:
+            return 'Error, negative numbers not allowed in Count Sort'
+
+    if maximum > 0:
+        count_arr = [0] * (maximum + 1)
+    else:
+        for i in range(0, len(arr)):
+            if arr[i] > maximum:
+                maximum = arr[i]
+        count_arr = [0] * (maximum + 1)
+
+    for i in arr:
+      count_arr[i] += 1
+
+    pos = 0;
+    for i in range(len(count_arr)):
+      while count_arr[i] > 0:
+        arr[pos] = i
+        pos += 1
+        count_arr[i] -= 1
+
     return arr
