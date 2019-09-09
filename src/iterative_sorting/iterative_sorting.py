@@ -13,7 +13,6 @@ def selection_sort(arr):
             arr[smallest_index] = tmp
     return arr
 
-# TO-DO: implement the Bubble Sort function below
 def bubble_sort(arr):
     is_unsorted = True
 
@@ -21,17 +20,15 @@ def bubble_sort(arr):
         did_swap = False
 
         for i in range(0, len(arr) - 1):
-            print(arr[i], arr[i + 1], arr[i] < arr[i+1])
-            # if arr[i] < arr[i+1]:
-            #     did_swap = True
+            if arr[i] > arr[i+1]:
+                temp = arr[i]
+                arr[i] = arr[i+1]
+                arr[i+1] = temp
+                did_swap = True
 
-        if did_swap = False:
+        if did_swap == False:
             is_unsorted = False
     return arr
-
-arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
-print(arr)
-print(bubble_sort(arr))
 
 # STRETCH: implement the Count Sort function below
 def count_sort(arr, maximum =- 1):
