@@ -1,10 +1,4 @@
 #
-# Dependencies
-#
-
-import numpy
-
-#
 # Define methods
 #
 
