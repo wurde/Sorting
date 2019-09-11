@@ -38,9 +38,8 @@ Let's think about the group photo example again. Everyone's lined up and the pho
 ### Real-World Applications
 While ***Quick Sort*** has "quick" in its name, it is typically not used as frequently as Merge Sort. Although it *is* quick in a best case scenario, worst case for ***Quick Sort*** is *very* bad. Because of this, it is not often chosen for production.
 
-
-
 ## Merge Sort
+
 Your boss asks you to organize an old filing cabinet with 20 years worth of financial documents. He would like things ordered chronologically. You feel overwhelemed. There are thousands of papers in this thing.
 So you decide to break this insane task up into more manageable pieces. First, you focus on organizing a single drawer. But this still has a lot of pieces of data that need to be sorted. Within the drawer, you pull out a single folder. You lay out all the contents on a table, grabbing two pieces at a time, placing the older document on top of the newer one. Then, you start merging sorted sets of documents together until the folder is done. Once all the folders have been reassembled, you order the folders correctly in the drawer. And then you put sorted drawers back into the filing cabinet. This idea of breaking a large set of data down into small pieces, sorting the pieces, then merging them back together is what ***Merge Sort*** is all about.  
 
